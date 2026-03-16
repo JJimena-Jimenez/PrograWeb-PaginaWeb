@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congreso Internacional de Tecnología 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Congreso Web <span>Academia & Tecnología 2026</span></h1>
+    </header>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="#inicio">Inicio</a>
+            <a href="#programa">Programa</a>
+            <a href="#ponencias">Ponencias</a>
+            <a href="#memorias">Memorias</a>
+            <a href="#registro">Registro</a>
+        </nav>
+    </div>
+    
+    <section class="hero" id="inicio">
+        <div class="contenido-hero">
+            <h2>Convocatoria Abierta 2026</h2> 
+            <div class="ubicacion">
+                <p>📍 Sede: Guadalajara, Jalisco | 📅 20-22 de Octubre</p>
+            </div>
+            <div class="botones-hero">
+                <a class="boton" href="#registro">Registrar Ponencia</a>
+                <a class="boton" href="#registro">Asistir al Evento</a>
+            </div>
+        </div>
+    </section>
+    
+    <main class="contenedor sombra">
+        <section id="programa">
+            <h2>Agenda del Congreso</h2>
+            <div class="filtros">
+                <button class="boton-filtro">Lunes 20</button>
+                <button class="boton-filtro">Martes 21</button>
+                <button class="boton-filtro">Miércoles 22</button>
+            </div>
+            <div class="programa-grid">
+                <div class="entrada-agenda">
+                    <div class="hora">09:00 AM</div>
+                    <div class="info">
+                        <strong>Conferencia Magistral: IA Aplicada</strong>
+                        <p>Auditorio Principal | Tipo: Presencial</p>
+                    </div>
+                </div>
+                <div class="entrada-agenda">
+                    <div class="hora">11:30 AM</div>
+                    <div class="info">
+                        <strong>Panel: Mujeres en la Ciencia</strong>
+                        <p>Sala B | Tipo: Híbrido</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ponencias" class="margin-top">
+            <h2>Listado de Ponencias</h2>
+            <div class="servicios">
+                <article class="servicio">
+                    <h3>Ciencias de la Computación</h3>
+                    <div class="iconos">
+                        <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    </div>
+                    <p>Detalle de investigaciones en algoritmos y estructuras de datos.</p>
+                    <a href="#" class="boton-sm">Ver Detalles</a>
+                </article>
+                <article class="servicio">
+                    <h3>Ingeniería y Sociedad</h3>
+                    <div class="iconos">
+                        <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2m12-9a4 4 0 01-4-4 4 4 0 014-4 4 4 0 014 4 4 4 0 01-4 4zm7 9v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <p>Impacto de la tecnología en el desarrollo humano sostenible.</p>
+                    <a href="#" class="boton-sm">Ver Detalles</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="memorias" class="margin-top">
+            <h2>Memorias de Ediciones Anteriores</h2>
+            <div class="filtros">
+                <select class="input-text">
+                    <option>Edición 2025</option>
+                    <option>Edición 2024</option>
+                </select>
+                <select class="input-text">
+                    <option>Todas las Categorías</option>
+                    <option>Tecnología</option>
+                    <option>Educación</option>
+                </select>
+            </div>
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Título del Artículo</th>
+                            <th>Autor Principal</th>
+                            <th>Año</th>
+                            <th>Enlace</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Análisis de Redes Neuronales</td>
+                            <td>García, M.</td>
+                            <td>2025</td>
+                            <td><a href="#" class="enlace-pdf">Ver PDF</a></td>
+                        </tr>
+                        <tr>
+                            <td>Sistemas Embebidos en la Industria</td>
+                            <td>López, R.</td>
+                            <td>2024</td>
+                            <td><a href="#" class="enlace-pdf">Ver PDF</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="registro" class="margin-top">
+            <h2>Formulario de Registro</h2>
+            <form class="formulario">
+                <fieldset>
+                    <legend>Información de Inscripción</legend>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre Completo</label>
+                            <input class="input-text" type="text" placeholder="Tu Nombre">
+                        </div>
+                        <div class="campo">
+                            <label>Correo Electrónico</label>
+                            <input class="input-text" type="email" placeholder="email@ejemplo.com">
+                        </div>
+                        <div class="campo">
+                            <label>Perfil</label>
+                            <select class="input-text" id="rol">
+                                <option value="asistente">Asistente / Participante</option>
+                                <option value="ponente">Ponente (Presentar trabajo)</option>
+                            </select>
+                        </div>
+
+                        <div class="campo full-width">
+                            <label>Título de la Ponencia</label>
+                            <input class="input-text" type="text" placeholder="Título oficial">
+                        </div>
+                        <div class="campo full-width">
+                            <label>Resumen / Abstract</label>
+                            <textarea class="input-text"></textarea>
+                        </div>
+
+                        <div class="campo">
+                            <label>Institución de Procedencia</label>
+                            <input class="input-text" type="text" placeholder="Universidad / Empresa">
+                        </div>
+                        <div class="campo">
+                            <label>Tipo de Asistencia</label>
+                            <select class="input-text">
+                                <option>Presencial ($1500 MXN)</option>
+                                <option>Virtual ($800 MXN)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-sm-100" type="submit" value="Continuar al Pago">
+                    </div>
+                    
+                    <div class="pagos-simulacion">
+                        <p>Aceptamos:</p>
+                        <img src="https://www.paypalobjects.com/webstatic/mktg/logo/AM_mc_vs_dc_ae.jpg" alt="PayPal">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer margin-top">
+        <p>Todos los derechos reservados. Congreso Académico 2026. Basado en estándares de CIO y Academia Journals.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,148 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100% );
+    margin: 0;
+}
+
+/* Reutilizables */
+.contenedor { 
+    max-width: 120rem; 
+    margin: 0 auto; 
+}
+
+.margin-top { 
+    margin-top: 5rem; 
+}
+.full-width { 
+    grid-column: 1 / -1; 
+}
+
+.sombra {
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    background-color: var(--blanco);
+    padding: 3rem;
+    border-radius: 1rem;
+    margin-top: -4rem;
+}
+
+/* Títulos */
+h1, h2, h3 { 
+    text-align: center; 
+}
+
+h1 {
+     font-size: 3.8rem; 
+     padding: 2rem 0; 
+    }
+
+h2 { 
+    font-size: 3.2rem; 
+    color: var(--secundario); 
+}
+
+/* Navegación */
+.nav-bg { 
+    background-color: var(--secundario); 
+}
+
+.navegacion-principal { 
+    display: flex; 
+    flex-direction: column; }
+
+@media (min-width: 768px) { 
+    .navegacion-principal { 
+        flex-direction: row; 
+        justify-content: space-between; } 
+}
+
+.navegacion-principal a {
+    display: block; text-align: center; color: var(--blanco);
+    text-decoration: none; 
+    font-size: 2rem; 
+    font-weight: 700; 
+    padding: 1.5rem;
+}
+
+.navegacion-principal a:hover { 
+    background-color: var(--primario); 
+    color: var(--oscuro); 
+}
+
+/* Hero */
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1&auto=format&fit=crop&w=1300&q=80');
+    background-size: cover; 
+    height: 450px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+.contenido-hero { 
+    text-align: center; 
+    color: var(--blanco); 
+}
+
+.botones-hero { 
+    display: flex; 
+    gap: 2rem; 
+    justify-content: center; 
+    margin-top: 2rem; }
+
+/* Botones */
+.boton {
+    background-color: var(--primario); color: var(--oscuro);
+    padding: 1rem 3rem; font-size: 1.8rem; font-weight: bold;
+    text-decoration: none; border-radius: .5rem; border: none; transition: scale 0.2s;
+}
+.boton:hover { scale: 1.05; cursor: pointer; }
+.boton-sm { background: var(--oscuro); color: white; padding: 0.5rem 1rem; text-decoration: none; border-radius: 0.3rem; font-size: 1.4rem; }
+
+/* Programa */
+.entrada-agenda {
+    display: flex; gap: 2rem; background: var(--grisClaro);
+    padding: 1.5rem; margin-bottom: 1rem; border-left: 5px solid var(--secundario);
+}
+.hora { font-weight: bold; color: var(--secundario); min-width: 100px; }
+
+/* Servicios/Ponencias */
+@media (min-width: 768px) { .servicios { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; } }
+.servicio { display: flex; flex-direction: column; align-items: center; padding: 2rem; border: 1px solid #eee; }
+.iconos { background: var(--primario); padding: 2rem; border-radius: 50%; margin-bottom: 1rem; }
+
+/* Tabla Memorias */
+.tabla-contenedor { overflow-x: auto; margin-top: 2rem; }
+table { width: 100%; border-collapse: collapse; }
+th { background: var(--secundario); color: white; padding: 1rem; }
+td { padding: 1rem; border-bottom: 1px solid #ddd; text-align: center; }
+
+/* Formulario */
+.formulario { background: var(--gris); padding: 2rem; border-radius: 1rem; }
+.formulario legend { color: var(--primario); font-size: 2rem; font-weight: bold; text-align: center; margin-bottom: 2rem; }
+.campo label { color: white; display: block; margin-bottom: 0.5rem; font-weight: bold; }
+.input-text { width: 100%; padding: 1rem; border-radius: 0.5rem; border: none; margin-bottom: 1.5rem; }
+.pagos-simulacion { text-align: center; margin-top: 2rem; color: white; }
+.pagos-simulacion img { max-width: 150px; border-radius: 5px; }
+
+@media (min-width: 768px) { .contenedor-campos { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; } }
+
+.footer { background: var(--oscuro); color: white; text-align: center; padding: 2rem; }
