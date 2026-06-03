@@ -1,0 +1,12 @@
+{
+    "name": "congreso/sitio-web-2026",
+    "description": "Sistema de registro para Congreso Academia & Tecnología 2026",
+    "require": {
+        "mpdf/mpdf": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Congreso\\": "src/"
+        }
+    }
+}
